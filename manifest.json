@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Quick Tatkal",
+  "description": "Quick Tatkal helps you book the Tatkal in the fastest possible way. Bingoo!!!",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+	"tabs",
+	"notifications"
+  ],
+  "icons": {
+    "16": "images/icon-16x16.png",
+    "128": "images/icon-128x128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon-16x16.png",
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+	"scripts":["js/jquery.js","js/background.js"]
+  },
+  "content_scripts": [
+		{
+		"matches":["http://www.irctc.co.in/*","https://www.irctc.co.in/*"],
+		"js":["js/jquery.js","js/contentScript.js"]
+		}
+	]
+}

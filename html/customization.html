@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quick Tatkal Customization</title>
+        <style>
+            .aHp {
+            text-decoration: none;
+            }
+            .abot {
+            text-decoration: none;
+            color: White;
+            font-family: Arial;
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid green;
+            background-color: #019CDE;
+            border-radius: 5px;
+            }
+            .txtfld {
+            border: 1px solid #BED6F8;
+            border-radius: 3px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: #FFF;
+            font-size: 12px;
+            font-family: arial, Helvetica, sans-serif;
+            color: black;
+            }
+            .t1 {
+            font-size: 12px;
+            font-family: arial, Helvetica, sans-serif;
+            background-color: #e5e5e5;
+            }
+            .t1H {
+            font-size: 12px;
+            font-family: arial, Helvetica, sans-serif;
+            background-color: #e5e5e5;
+            visibility: hidden;
+            display: none;
+            }
+            .t2 {
+            font-size: 12px;
+            font-family: arial, Helvetica, sans-serif;
+            }
+        </style>
+        <meta name="keywords" content="Quick Tatkal, Book Tatkal ticket, magic auto fill irctc forms, irctc reservation, book ticket in 30 sec">
+        <meta name="description" content="Book Tatkal Ticket in 30 sec by using Firefox, Chore and IE Form-Plugin &amp; Extension, All Autofill IRCTC Tatkal Form-Plugin &amp; Extension are free of cost">
+        <link href="../css/jquery-ui.css" rel="stylesheet">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="../js/jtcode4.js" type="text/javascript"></script>
+        <script src="../js/chk13.js" type="text/javascript"></script>
+        <script src="../js/ds4.js" type="text/javascript"></script>
+        <meta property="fb:admins" content="100008631310120">
+        <meta property="fb:app_id" content="357263327811632">
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/hglennijikhdiodhggelknephplffdnc">
+    </head>
+    <body style=" margin:0px">
+        <div id="divHeader" style="padding-left:40px;">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="divMess" align="center" style="color:red; "></div>
+        </div>
+        <div id="divBoby" align="center">
+            <table>
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" width="30%">
+                                            <table cellpadding="5px" cellspacing="0px" style=" margin:10px;border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial;" width="80%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">
+                                                            Login Detail&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2">
+                                                            Username
+                                                        </td>
+                                                        <td>
+                                                            <input name="j_username" type="text" class="txtfld" title="Enter IRCTC User Name">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2">
+                                                            Password
+                                                        </td>
+                                                        <td>
+                                                            <input name="j_password" type="password" class="txtfld" title="Enter IRCTC Password">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table cellpadding="5px" cellspacing="0px" style=" margin:10px;border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial;" width="80%">
+                                                <tbody>
+                                                    <tr style="text-align:center;">
+                                                        <td colspan="4" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">
+                                                            Select Quota
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="text-align:center;">
+                                                        <td class="t2">
+                                                            <input type="radio" name="quota" value="GN"><br><label>GENERAL</label>
+                                                        </td>
+                                                        <td class="t2">
+                                                            <input type="radio" name="quota" value="PT"><br> <label>PREMIUM TATKAL</label>
+                                                        </td>
+                                                        <td class="t2">
+                                                            <input type="radio" name="quota" value="LD"><br> <label>LADIES</label>
+                                                        </td>
+                                                        <td class="t2">
+                                                            <input type="radio" name="quota" value="TQ" checked="checked"><br> <label>TATKAL</label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <input id="btnSaveData" type="button" value="Save Form" style=" color:White; width:80%;font-family:Arial; font-size:20px;margin:5px; border:3px solid green; background-color:#019CDE;border-radius:5px; padding-bottom:10px; padding-left:30px; padding-right:30px; padding-top:10px;" title="Save Data to use it in IRCTC">
+                                            <input id="enableDisableFlag" type="button" style=" color:White; width:80%;font-family:Arial; font-size:20px;margin:5px; border:3px solid green; background-color:#019CDE;border-radius:5px; padding-bottom:10px; padding-left:30px; padding-right:30px; padding-top:10px;" title="Disable/Enable Extension">
+                                        </td>
+                                        <td valign="top" width="30%">
+                                            <table cellpadding="5px" cellspacing="0px" style=" margin:10px;border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial;" width="95%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">
+                                                            Plan My Travel
+                                                            <input id="chkAutoSearch" title="Check For Auto search train" type="checkbox" style=" float:right" checked="checked"><span style=" float:right;font-size: 11px; font-weight:bold;font-family: arial, Helvetica, sans-serif; ">Auto Search</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left">
+                                                            From
+                                                        </td>
+                                                        <td align="left">
+                                                            <input name="jpform:fromStation" type="text" class="txtfld" id="fromStation">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left">
+                                                            To
+                                                        </td>
+                                                        <td align="left">
+                                                            <input name="jpform:toStation" type="text" class="txtfld" id="toStation">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left">
+                                                            Date
+                                                        </td>
+                                                        <td align="left">
+                                                            <input name="jpform:journeyDateInputDate" type="text" class="txtfld" id="journeyDateInputDate">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left">
+                                                            Train No
+                                                        </td>
+                                                        <td align="left">
+                                                            <input id="txttrainNo" type="text" class="txtfld" title="Enter Train no for auto Book Now">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left">
+                                                            Class
+                                                        </td>
+                                                        <td align="left" style="font-size: 10px; font-family: arial, Helvetica, sans-serif">
+                                                            <select id="ddlClass" name="ddlClass" class="txtfld">
+                                                                <option>SL</option>
+                                                                <option>3A</option>
+                                                                <option>2A</option>
+                                                                <option>CC</option>
+                                                                <option>2S</option>
+                                                                <option>1A</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="t2" align="left" colspan="2">
+                                                            Boarding Station: <input id="boardingStation" type="text" class="txtfld" title="Can be left blank if FROM Station is same as Bording Station" size="16">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="left">
+                            <div style="float:right">
+                            </div>
+                            <select id="ddlSavedList" >
+                                <option value="nil">-Select-</option>
+                                <option value="set1">Ticket Set 1</option>
+                                <option value="set2">Ticket Set 2</option>
+                                <option value="set3">Ticket Set 3</option>
+                                <option value="set4">Ticket Set 4</option>
+                            </select>
+                            <input id="btnLoadData" type="button" value="Load Ticket Data">
+                            <input id="btnClearData" type="button" value="Clear Ticket Data">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <table cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <table id="tbPass" cellpadding="5px" cellspacing="0px" style=" margin-left:10px;border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="9" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">
+                                                                            Passenger Details
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="t1">SNo</td>
+                                                                        <td class="t1">Name</td>
+                                                                        <td class="t1">Age</td>
+                                                                        <td class="t1">Sex</td>
+                                                                        <td class="t1">Berth Preference</td>
+                                                                        <td class="t1">Meal</td>
+                                                                        <td class="t1">Sen Citzn</td>
+                                                                        <td class="t1H">ID Card Type</td>
+                                                                        <td class="t1H">ID Card No</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="t2"> 1 </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" id="PassemgerOne" class="txtfld" size="15" maxlength="16" name="addPassengerForm:psdetail:0:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" size="1" id="psgAge1" maxlength="3" name="addPassengerForm:psdetail:0:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:0:psgnGender">
+                                                                                <option value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:0:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:0:foodChoice" id="addPassengerForm:psdetail:0:foodChoice" style=" width:75px;">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" name="addPassengerForm:psdetail:0:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:0:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" id="primaryIDcard" maxlength="20" name="addPassengerForm:psdetail:0:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="passenger1">
+                                                                        <td class="t2">
+                                                                            2
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" id="PassemgerTwo" class="txtfld" value="" size="15" maxlength="16" name="addPassengerForm:psdetail:1:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input id="psgAge2" type="text" class="txtfld" size="1" maxlength="3" name="addPassengerForm:psdetail:1:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:1:psgnGender">
+                                                                                <option selected="selected" value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:1:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:1:foodChoice" id="addPassengerForm:psdetail:1:foodChoice">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" onclick="isSeniorCitizen(1)" name="addPassengerForm:psdetail:1:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:1:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" value="" maxlength="20" name="addPassengerForm:psdetail:1:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="passenger2">
+                                                                        <td class="t2">
+                                                                            3
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" value="" size="15" maxlength="16" name="addPassengerForm:psdetail:2:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" size="1" maxlength="3" name="addPassengerForm:psdetail:2:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:2:psgnGender">
+                                                                                <option selected="selected" value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:2:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:2:foodChoice" id="addPassengerForm:psdetail:2:foodChoice">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" onclick="isSeniorCitizen(2)" name="addPassengerForm:psdetail:2:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:2:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" value="" maxlength="20" name="addPassengerForm:psdetail:2:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="passenger3">
+                                                                        <td class="t2">
+                                                                            4
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" value="" size="15" maxlength="16" name="addPassengerForm:psdetail:3:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" size="1" maxlength="3" name="addPassengerForm:psdetail:3:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:3:psgnGender">
+                                                                                <option selected="selected" value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:3:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:3:foodChoice" id="addPassengerForm:psdetail:3:foodChoice">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" onclick="isSeniorCitizen(3)" name="addPassengerForm:psdetail:3:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:3:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" value="" maxlength="20" name="addPassengerForm:psdetail:3:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="passenger4">
+                                                                        <td class="t2">
+                                                                            5
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" value="" size="15" maxlength="16" name="addPassengerForm:psdetail:4:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" size="1" maxlength="3" name="addPassengerForm:psdetail:4:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:4:psgnGender">
+                                                                                <option selected="selected" value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:4:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:4:foodChoice" id="addPassengerForm:psdetail:4:foodChoice">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" onclick="isSeniorCitizen(4)" name="addPassengerForm:psdetail:4:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:4:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" value="" maxlength="20" name="addPassengerForm:psdetail:4:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="passenger5">
+                                                                        <td class="t2">
+                                                                            6
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" value="" size="15" maxlength="16" name="addPassengerForm:psdetail:5:psgnName">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="text" class="txtfld" size="1" maxlength="3" name="addPassengerForm:psdetail:5:psgnAge">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:5:psgnGender">
+                                                                                <option selected="selected" value="">Select</option>
+                                                                                <option value="F">Female</option>
+                                                                                <option value="M">Male</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:5:berthChoice">
+                                                                                <option selected="" value="">No Preference</option>
+                                                                                <option value="LB">LOWER</option>
+                                                                                <option value="MB">MIDDLE</option>
+                                                                                <option value="UB">UPPER</option>
+                                                                                <option value="SL">SIDE LOWER</option>
+                                                                                <option value="SU">SIDE UPPER</option>
+                                                                                <option value="WS">WINDOW SIDE</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:5:foodChoice" id="addPassengerForm:psdetail:5:foodChoice">
+                                                                                <option value=" ">Select</option>
+                                                                                <option value="N">Non-Veg</option>
+                                                                                <option value="V">Veg</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input type="checkbox" onclick="isSeniorCitizen(5)" name="addPassengerForm:psdetail:5:concessionOpt" class="txtfld">
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <select class="txtfld" name="addPassengerForm:psdetail:5:idCardType" style=" width:100px;">
+                                                                                <option value="NULL_IDCARD">Select ID Card Type</option>
+                                                                                <option value="DRIVING_LICENSE">Driving Licence</option>
+                                                                                <option value="PASSPORT">Passport</option>
+                                                                                <option value="PANCARD">PAN Card</option>
+                                                                                <option value="VOTER_ICARD">Voter ID-card</option>
+                                                                                <option value="GOVT_ICARD">Govt Issued ID-Card</option>
+                                                                                <option value="STUDENT_ICARD">Student ID-Card</option>
+                                                                                <option value="BANK_PASSBOOK">Bank Passbook</option>
+                                                                                <option value="CREDIT_CARD">Credit card with Photo</option>
+                                                                                <option value="UNIQUE_ICARD">Aadhaar ID</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t1H">
+                                                                            <input type="text" class="txtfld" value="" maxlength="20" name="addPassengerForm:psdetail:5:idCardNumber" size="15">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td valign="top">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table cellpadding="0" cellspacing="0" style="margin:0px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding: 5px" valign="top">
+                                                            <table cellpadding="5px" cellspacing="0px" style=" margin:5px; border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial; float:left;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="4" align="left" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">
+                                                                            Child Passenger Details
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="highlight">
+                                                                        <td class="t1">
+                                                                            SNo
+                                                                        </td>
+                                                                        <td class="t1">
+                                                                            Name
+                                                                        </td>
+                                                                        <td class="t1">
+                                                                            Age
+                                                                        </td>
+                                                                        <td class="t1">
+                                                                            Sex
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="t2">
+                                                                            1.
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <input class="txtfld" maxlength="16" name="addPassengerForm:childInfoTable:0:infantName" size="22" type="text">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select name="addPassengerForm:childInfoTable:0:infantAge" class="txtfld">
+                                                                                <option selected="" value="">Select</option>
+                                                                                <option value="0">Below one year</option>
+                                                                                <option value="1">One year</option>
+                                                                                <option value="2">Two year</option>
+                                                                                <option value="3">Three year</option>
+                                                                                <option value="4">Four year</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select name="addPassengerForm:childInfoTable:0:infantGender" class="txtfld">
+                                                                                <option selected="" value="">Select</option>
+                                                                                <option value="M">Male</option>
+                                                                                <option value="F">Female</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="t2">
+                                                                            2.
+                                                                        </td>
+                                                                        <td>
+                                                                            <input class="txtfld" maxlength="16" name="addPassengerForm:childInfoTable:1:infantName" size="22" type="text" value="">
+                                                                        </td>
+                                                                        <td class="t2">
+                                                                            <select name="addPassengerForm:childInfoTable:1:infantAge" class="txtfld">
+                                                                                <option selected="" value="">Select</option>
+                                                                                <option value="0">Below one year</option>
+                                                                                <option value="1">One year</option>
+                                                                                <option value="2">Two year</option>
+                                                                                <option value="3">Three year</option>
+                                                                                <option value="4">Four year</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select name="addPassengerForm:childInfoTable:1:infantGender" class="txtfld">
+                                                                                <option selected="" value="">Select</option>
+                                                                                <option value="M">Male</option>
+                                                                                <option value="F">Female</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td style="padding: 5px" valign="top">
+                                                            <table cellpadding="5px" cellspacing="0px" style=" margin:10px;border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial; float:left;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="left" class="t1">
+                                                                            <input name="addPassengerForm:autoUpgrade" type="checkbox" class="txtfld">Consider for Auto Upgradation
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="t1">
+                                                                            <input id="Checkbox2" name="addPassengerForm:onlyConfirmBerths" type="checkbox" class="txtfld">Book only if confirm berths are allotted
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="t1">
+                                                                            Mobile Number :<input id="Text1" name="addPassengerForm:mobileNo" type="text" class="txtfld"><br> SMS will be sent to this number
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 5px" valign="top" colspan="2">
+                                                            <table id="divPayTb" cellpadding="5px" cellspacing="0px" style=" border-radius:5px; border:1px solid #0e72bb; background-color:#f5f5f5; font-family:Arial; float:left">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2" style="background-color: #3665C2; color: #FFFFFF; font-family: Verdana; font-weight: bold; padding: 5px; font-size: 13px;">Payment Option<input id="chkAutoPay" checked="checked" style=" float:right" title="Check for Auto navigate to Payment gatyway site" type="checkbox"><span style=" float:right;font-size: 11px; font-weight:bold; font-family: arial, Helvetica, sans-serif">Auto Payment</span> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="t2">Payment Mode : </td>
+                                                                        <td align="left" class="t2">
+                                                                            <select id="ddlPaymentMode" class="txtfld" name="D1">
+                                                                                <option value="UPI_VPA">BHIM / UPI / USSD</option>
+                                                                                <option selected="selected" value="AGGREGATOR">Multiple Payment Service</option>
+                                                                                <option value="DEBIT_CARD">Debit Card with PIN</option>
+                                                                                <option value="NETBANKING">Net Banking</option>
+                                                                                <option value="CASH_CARD">Wallets/ Cash Cards</option>
+                                                                                <option value="IRCTC_PREPAID">IRCTC Prepaid</option>
+                                                                                <option value="E_WALLET">IRCTC eWallet</option>
+                                                                                <option value="COD">Pay On Delivery / Paylater</option>
+                                                                                <option value="CREDIT_CARD">Payment Gateway /Credit /Debit Cards</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="t2" valign="top">Select Gateway : </td>
+                                                                        <td align="left" class="t2">
+                                                                            <div id="CASH_CARD" style="display:none">
+                                                                                <select id="jpBookbankCCList" name="jpBookbankCCList" size="1" class="txtfld" >
+                                                                                    <option value="-1">Select Cash card</option>
+                                                                                    <option value="23">ITZ Cash Card</option>
+                                                                                    <option value="33">I Cash Card</option>
+                                                                                    <option value="55">Oxigen Cash Card</option>
+                                                                                    <option value="68">Mobikwik Wallet</option>
+                                                                                    <option value="70">mRUPEE Wallet</option>
+                                                                                    <option value="71">Paytm Wallet</option>
+                                                                                    <option value="79">Freecharge Wallet</option>
+                                                                                    <option value="75">SBI Buddy</option>
+                                                                                    <option value="85">OLAMONEY Wallet</option>
+                                                                                    <option value="93">Airtel Money</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div id="UPI_VPA" style="display:none">
+                                                                                <select id="jpBookUPIList" name="jpBookUPIList" size="1" class="txtfld">
+                                                                                    <option value="-1">Select Bank</option>
+                                                                                    <option selected="selected" value="97">UPI (Powered by AXIS BANK) also accepts Payments using BHIM</option>
+                                                                                </select>
+                                                                                <br><br>
+                                                                                <input class="txtfld" placeholder="Enter Virtual Payment Address (VPA)" size="39" name="txt_upi_vpa" id="txt_upi_vpa" type="text">
+                                                                            </div>
+                                                                            <div id="AGGREGATOR" style="display:none">
+                                                                                <select id="jpBookbankAggList" name="jpBookbankAggList" size="1" class="txtfld">
+                                                                                    <option value="-1">Select Bank</option>
+                                                                                    <option selected="" value="78">Credit &amp; Debit cards / Net Banking / Wallet (Powered by Paytm)</option>
+                                                                                    <option value="94">Credit &amp; Debit cards / Net Banking / Wallet (Powered by ITZ)</option>
+                                                                                    <option value="98">Credit &amp; Debit cards / Net Banking / Wallet (Powered by PayU)</option>
+                                                                                </select>
+                                                                                <br> Card Type 
+                                                                                <select id="ddlCardType" name="ddlCardType" size="1" class="txtfld">
+                                                                                    <option value="pt-db-click">Debit Card</option>
+                                                                                    <option value="pt-cc-click">Credit Card</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div id="NETBANKING" style="display:none">
+                                                                                <select id="jpBook:bankINBList" class="txtfld" name="jpBook:bankINBList">
+                                                                                    <option value="-1">Select Bank</option>
+                                                                                    <option value="1">State Bank of India</option>
+                                                                                    <option value="10">State Bank of India and Associates</option>
+                                                                                    <option value="22">Federal Bank</option>
+                                                                                    <option value="29">Indian Bank</option>
+                                                                                    <option value="28">Union Bank of India</option>
+                                                                                    <option value="31">Andhra Bank</option>
+                                                                                    <option value="34">Punjab National Bank</option>
+                                                                                    <option value="35">Allahabad Bank</option>
+                                                                                    <option value="38">Vijaya Bank</option>
+                                                                                    <option value="39">AXIS Bank</option>
+                                                                                    <option value="36">HDFC Bank</option>
+                                                                                    <option value="37">Bank of Baroda</option>
+                                                                                    <option value="42">Karnataka Bank</option>
+                                                                                    <option value="43">Oriental Bank of Commerce</option>
+                                                                                    <option value="40">Karur Vysya Bank</option>
+                                                                                    <option value="46">Kotak Mahindra Bank</option>
+                                                                                    <option value="47">INGVysya Bank</option>
+                                                                                    <option value="44">ICICI Bank</option>
+                                                                                    <option value="45">IndusInd Bank</option>
+                                                                                    <option value="51">IMPS</option>
+                                                                                    <option value="50">Central Bank of India</option>
+                                                                                    <option value="48">Bank of India</option>
+                                                                                    <option value="54">Syndicate Bank</option>
+                                                                                    <option value="53">Bank of Maharashatra</option>
+                                                                                    <option value="52">IDBI Bank</option>
+                                                                                    <option value="56">Corporation Bank</option>
+                                                                                    <option value="60">Yes Bank</option>
+                                                                                    <option value="64">Nepal SBI Bank Ltd.</option>
+                                                                                </select>
+                                                                                <div id="divbankUID">
+                                                                                    <select id="ddlSBIASS" class="txtfld" style="visibility:hidden;">
+                                                                                        <option value="1">State Bank of Bikaner and Jaipur</option>
+                                                                                        <option value="2">State Bank of Patiala</option>
+                                                                                        <option value="3">State Bank of Hyderabad</option>
+                                                                                        <option value="4">State Bank of Travancore</option>
+                                                                                        <option value="5">State Bank of Mysore</option>
+                                                                                    </select>
+                                                                                    <br>
+                                                                                </div>
+                                                                                <div id="divIMPS" style="display:none">
+                                                                                    <input type="text" id="txtCustomerMobileNumber" class="txtfld" placeholder="Mobile Number">
+                                                                                    <input type="text" id="txtCustomerMmid" class="txtfld" placeholder="MMID"><br>
+                                                                                    <input type="text" id="txtOtp" class="txtfld" placeholder="OTP">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="IRCTC_PREPAID" style="display:none">
+                                                                                <select id="jpBookbankPrepaidList" name="jpBookbankPrepaidList" size="1" class="txtfld">
+                                                                                    <option value="-1">Select</option>
+                                                                                    <option selected="selected" value="59">IRCTC Union Bank prepaid (RuPay)</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div id="COD" style="display:none">
+                                                                                <select id="jpBookCODList" name="jpBookCODList" size="1" class="txtfld">
+                                                                                    <option value="-1">Select Bank</option>
+                                                                                    <option selected="selected" value="100">ePaylater (Powered by Arthashastra Fintech Pvt. Ltd.)</option>
+                                                                                </select>
+                                                                                <br><br>
+                                                                                <input class="txtfld" placeholder="ePay Registered Mobile Number" name="epay_mob_num" maxlength="10" size="39" id="epay_mob_num" type="text">
+                                                                            </div>
+                                                                            <div id="E_WALLET" style="display:none">
+                                                                                <input class="txtfld" placeholder="Enter Transaction Password" name="ewallet_txnpwd" maxlength="15" size="39" id="ewallet_txnpwd" type="text">
+                                                                            </div>
+                                                                            <div id="divUNPED" style="display:none; padding-top:5px;">
+                                                                                <input type="text" id="bankUID" class="txtfld" placeholder="Login ID/User Name" title="Username autofill may not work with all banks, verify before use">
+                                                                                <input type="text" id="bankPWD" class="txtfld" placeholder="Password" title="Password autofill may not work with all banks, verify before use">
+                                                                            </div>
+                                                                            <select id="jpBook:bankDCList" class="txtfld" name="jpBook:bankDCList" style="display:none">
+                                                                                <option value="-1">Select Bank</option>
+                                                                                <option value="3">State Bank of India</option>
+                                                                                <option value="5">Indian Overseas Bank</option>
+                                                                                <option value="9">Punjab National Bank</option>
+                                                                                <option value="15">Indian Bank</option>
+                                                                                <option value="16">Union Bank of India</option>
+                                                                                <option value="19">Bank of India</option>
+                                                                                <option value="25">Andhra Bank</option>
+                                                                                <option value="26">Canara Bank</option>
+                                                                                <option value="32">CITI Bank</option>
+                                                                                <option value="41">ICICI Bank</option>
+                                                                                <option value="57">HDFC Bank</option>
+                                                                                <option value="69">Central Bank of India</option>
+                                                                                <option value="66">AXIS Bank</option>
+                                                                                <option value="86">United Bank of India</option>
+                                                                            </select>
+                                                                            <select id="jpBook:bankPGList" class="txtfld" name="jpBook:bankPGList" style=" display:none">
+                                                                                <option selected="selected" value="-1">Select Bank</option>
+                                                                                <option value="4">Visa/Master Card(Powered By ICICI BANK)</option>
+                                                                                <option value="17">Visa/Master Card(Powered By CITI BANK)</option>
+                                                                                <option value="21">Visa/Master Card(Powered By HDFC BANK)</option>
+                                                                                <option value="27">American Express</option>
+                                                                                <option value="30">Visa/Master Card(Powered By AXIS BANK)</option>
+                                                                                <option value="58">RuPay Card (Powered by Kotak Bank)</option>
+                                                                            </select>
+                                                                            <table id="card-input-table" border="0" style=" display:none; padding-top:5px" width="100%">
+                                                                                <tbody>
+                                                                                    <tr id="cardTypeRowId">
+                                                                                        <td>Card Type : </td>
+                                                                                        <td>
+                                                                                            <select id="card_type_id" class="txtfld" name="card_type">
+                                                                                                <option value="VISA">VISA</option>
+                                                                                                <option value="MC">MASTER</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Card Number : </td>
+                                                                                        <td>
+                                                                                            <input id="card_no_id" autocomplete="off" class="txtfld" maxlength="19" name="card_no" placeholder="Please enter your card number" size="39" type="text">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Card Expiry Date : </td>
+                                                                                        <td>
+                                                                                            Month :
+                                                                                            <select id="card_expiry_mon_id" class="txtfld" name="card_expiry_mon">
+                                                                                                <option selected="selected" value="mm">mm</option>
+                                                                                                <option value="01">01 (Jan)</option>
+                                                                                                <option value="02">02 (Feb)</option>
+                                                                                                <option value="03">03 (Mar)</option>
+                                                                                                <option value="04">04 (Apr)</option>
+                                                                                                <option value="05">05 (May)</option>
+                                                                                                <option value="06">06 (Jun)</option>
+                                                                                                <option value="07">07 (Jul)</option>
+                                                                                                <option value="08">08 (Aug)</option>
+                                                                                                <option value="09">09 (Sep)</option>
+                                                                                                <option value="10">10 (Oct)</option>
+                                                                                                <option value="11">11 (Nov)</option>
+                                                                                                <option value="12">12 (Dec)</option>
+                                                                                            </select>
+                                                                                            Year(yyyy) :
+                                                                                            <input id="card_expiry_year_id" autocomplete="off" class="txtfld" maxlength="4" name="card_expiry_year" size="4" type="text">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td id="tdspCVV"><span id="spCVV">CVV Number: </span>
+                                                                                            <input placeholder="CVV" id="cvv_no_id" class="txtfld" maxlength="4" name="cvv_no" size="4" type="password">
+                                                                                        </td>
+                                                                                        <td id="tdccPin_id">
+                                                                                            <span>Pin: </span>
+                                                                                            <input placeholder="PIN" id="ccPin_id" class="txtfld" maxlength="4" name="ccPin_id" size="4" type="password">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Name on Card : </td>
+                                                                                        <td>
+                                                                                            <input id="card_name_id" class="txtfld" maxlength="35" name="card_name" placeholder="Please enter your name specified on the card" size="39" type="text">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <span style=" color:green;font-size: 11px; font-weight:bold;font-family: arial, Helvetica, sans-serif">
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input id="txtHid" type="hidden">
+            <input id="txtPayID" type="hidden">
+            <input id="txttest" type="hidden" value="1">
+            <input id="txtHbookDate" type="hidden">
+            <input id="txtHbookDate1" type="hidden">
+            <input id="txtMver" type="hidden" value="5.0">
+            <input id="txtFFURL" type="hidden" value="https://myrailinfo.in/myRailinfo_5.5.xpi">
+        </div>
+    </body>
+</html>
